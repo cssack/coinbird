@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@400;700&display=swap');
 
+* {
+	border-radius: 0 !important;
+}
+
+h2{
+	background:white;
+	color:black;
+}
 
 .dark-mode{
 	background-color: black;
 }
 
-.dark-mode, 
-.dark-mode .btn {
+.dark-mode {
 	color: white
 }
 
