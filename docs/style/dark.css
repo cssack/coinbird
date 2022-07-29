@@ -1,21 +1,20 @@
-
 h1, h2, h3, h4, h5, h6{
 	color:black;
-	background:white;
+	background:#DFDEDB;
 }
 
 .bg-normal { background-color: black; }
-.text-normal { color:white; }
-.bg-accent{ background-color: white; }
+.text-normal { color:#DFDEDB; }
+.bg-accent{ background-color: #DFDEDB; }
 .text-accent{ color: black; }
 
 .btn-link{
-	background-color: white;
-	color:black;
+	background-color: transparent;
+	color:#DFDEDB;
 	text-decoration: none;
 }
 .btn-link:hover{
-	background-color: white;
-	color:black;
+	background-color: transparent;
+	color:#DFDEDB;
 	text-decoration: none;
 }

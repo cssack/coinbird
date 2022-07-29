@@ -9,12 +9,12 @@ h1, h2, h3, h4, h5, h6{
 .text-accent{ color: white; }
 
 .btn-link{
-	background-color: black;
-	color:white;
+	background-color: transparent;
+	color:black;
 	text-decoration: none;
 }
 .btn-link:hover{
-	background-color: black;
-	color:white;
+	background-color: transparent;
+	color:black;
 	text-decoration: none;
 }
