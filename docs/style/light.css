@@ -1,0 +1,22 @@
+body{
+	background-color: white;
+	color: black
+}
+h1, h2, h3, h4, h5, h6{
+	color: white;
+	background-color: black;
+}
+
+.bg-accent{ background-color: black; }
+.text-accent{ color: white; }
+
+.btn-link{
+	background-color: black;
+	color:white;
+	text-decoration: none;
+}
+.btn-link:hover{
+	background-color: black;
+	color:white;
+	text-decoration: none;
+}

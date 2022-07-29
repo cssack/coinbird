@@ -1,43 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@400;700&display=swap');
 
-* {
-	border-radius: 0 !important;
+/* remove all round corners from bootstrap. */
+* { border-radius: 0 !important;}
+
+.ff-indie{ font-family: 'Indie Flower', cursive; }
+.ff-kalam{ font-family: 'Kalam', cursive; }
+.uppercase{ text-transform: uppercase; }
+
+h1,h2,h3,h4,h5,h6{
+    padding-right: 0.25rem!important;
+    padding-left: 0.25rem!important;
+	padding-top: 0.25rem;
 }
 
-h2{
-	background:white;
-	color:black;
+/* a horizontal list for the top bar. */
+.list-inline {
+	margin: 0px;
+	list-style: none;
+	margin-left: -1em;
+	margin-right: 0em;
+	padding-left: 0;
 }
-
-.dark-mode{
-	background-color: black;
+.list-inline li{
+	display: inline-block;
+	margin-left: 2em;
+	margin-right: 0.5em;
 }
-
-.dark-mode {
-	color: white
-}
-
-
-body{
-    font-family: 'Indie Flower', cursive; 
-}
-
-.ff-indie{
-    font-family: 'Indie Flower', cursive; 
-}
-.ff-kalam{
-	font-family: 'Kalam', cursive;
-}
-.uppercase{
-	text-transform: uppercase;
-}
-.fs-18{
-	font-size: 18px;
-}
-.fs-20{
-	font-size: 20px;
-}
-
-.rotate-45{
-    
+.list-inline > li:before {
+	content: "•";
+	margin-left: -1em;
+	position: absolute;
 }
