@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@400;700&display=swap');
+
+
+.dark-mode{
+	background-color: black;
+}
+
+.dark-mode, 
+.dark-mode .btn {
+	color: white
+}
+
+
+body{
+    font-family: 'Indie Flower', cursive; 
+}
+
+.ff-indie{
+    font-family: 'Indie Flower', cursive; 
+}
+.ff-kalam{
+	font-family: 'Kalam', cursive;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.fs-20{
+	font-size: 20px;
+}

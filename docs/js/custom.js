@@ -1,6 +1,6 @@
 function burgerMenuClicked(sender){
-  console.log(sender)
   sender.classList.toggle('active');
+  document.querySelector('#main-menu').classList.toggle('show');
 }
 
 // $(document).ready(function() {
