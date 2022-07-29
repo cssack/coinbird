@@ -11,3 +11,7 @@ function toggleTheme(){
   darkStyleSheet.disabled = !darkStyleSheet.disabled;
   lightStyleSheet.disabled = !lightStyleSheet.disabled;
 }
+
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}

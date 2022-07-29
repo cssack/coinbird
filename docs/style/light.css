@@ -1,12 +1,10 @@
-body{
-	background-color: white;
-	color: black
-}
 h1, h2, h3, h4, h5, h6{
 	color: white;
 	background-color: black;
 }
 
+.bg-normal { background-color: white; }
+.text-normal { color:black; }
 .bg-accent{ background-color: black; }
 .text-accent{ color: white; }
 
