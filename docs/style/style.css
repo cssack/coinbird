@@ -27,7 +27,9 @@ h1,h2,h3,h4,h5,h6{
 	margin-right: 0.5em;
 }
 .list-inline > li:before {
-	content: "•";
-	margin-left: -1em;
+	content: "■";
+	margin-left: -2em;
 	position: absolute;
+	font-size: 40%;
+	margin-top: 6px;
 }
