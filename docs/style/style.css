@@ -33,3 +33,20 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 40%;
 	margin-top: 6px;
 }
+
+
+.cursor-pointer{
+	cursor: pointer;
+}
+
+
+@media (min-width: 1600px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+		max-width: 1600px;
+	}
+}
+@media (min-width: 1975px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+		max-width: 1975px;
+	}
+}
