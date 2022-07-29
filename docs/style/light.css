@@ -25,3 +25,7 @@ h1, h2, h3, h4, h5, h6{
 .bar3::before, .bar3::after{
     background: black;
 }
+
+.invert-on-light{
+    filter: invert(100%);
+}
