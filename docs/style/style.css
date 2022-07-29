@@ -24,6 +24,13 @@ body{
 .uppercase{
 	text-transform: uppercase;
 }
+.fs-18{
+	font-size: 18px;
+}
 .fs-20{
 	font-size: 20px;
+}
+
+.rotate-45{
+    
 }
