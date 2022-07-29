@@ -1,0 +1,215 @@
+.burger-menu .glyph {
+    position: relative;
+    z-index: 99999;
+    cursor: pointer;
+    height: auto;
+}
+.bars {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 32px;
+    height: 23px;
+}
+.bar1 {
+    height: 3px;
+    width: 32px;
+    background: transparent;
+    position: relative;
+    transition: transform 0.2s ease 0s;
+    transform-origin: 0% 50%;
+}
+.bar1::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 3px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 0.2rem;
+    background: #868686;
+    transition: width 0.2s ease 0s, background 0.2s ease 0s;
+}
+.bar2 {
+    position: relative;
+    height: 3px;
+    width: 32px;
+    background: transparent;
+    transition: transform 0.2s ease 0s;
+    transform-origin: 0% 50%;
+}
+.bar2::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 0.2rem;
+    background: #868686;
+    transition: width 0.2s ease 0s, background 0.2s ease 0s;
+}
+.bar2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background:#868686;
+    right: 0px;
+    height: 3px;
+    width: 25px;
+    border-radius: 0.2rem;
+    transition: width 0.2s ease 0s, background 0.2s ease 0s;
+}
+.bar3 {
+    height: 3px;
+    width: 32px;
+    align-self: auto;
+    background: transparent;
+    position: relative;
+    transition: transform 0.2s ease 0s;
+    transform-origin: 100% 50%;
+}
+.bar3::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform-origin: 0% 50%;
+    border-radius: 0.2rem;
+    background: #868686;
+    transition: width 0.2s ease 0s, background 0.2s ease 0s;
+}
+.bar3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #868686;
+    right: 0px;
+    height: 3px;
+    width: 5px;
+    border-radius: 0.2rem;
+    transition: width 0.2s ease 0s, background 0.2s ease 0s;
+}
+.bars:hover .bar1::before, .bars:hover .bar2::before, .bars:hover .bar2::after, .bars:hover .bar3::after {
+    width: 25px;
+}
+.bars:hover .bar3::before {
+    width: 3px;
+}
+
+
+
+
+.active .bars {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.active .bar1 {
+    height: 0.3rem;
+    width: 3.4rem;
+    background: transparent;
+    position: relative;
+    transition: transform 0.2s ease 0s;
+    transform: rotate(45deg) translate(-0.1rem, -0.1rem);
+    transform-origin: 0% 50%;
+}
+.active .bar1::before {
+    content: "";
+    display: block;
+    width: 1rem;
+    height: 3px;
+    position: absolute;
+    left: 9px;
+    top: 0px;
+    border-radius: 0.2rem;
+    background:#868686;
+    transition: width 0.2s ease 0s, background 0.2s ease 0s;
+}
+.active .bar2 {
+    position: relative;
+    height: 0.3rem;
+    width: 3.4rem;
+    background: transparent;
+    transform: rotate(-45deg) translate(-0.8rem, 0.8rem);
+    transition: transform 0.2s ease 0s;
+    transform-origin: 0% 50%;
+}
+.active .bar2::before {
+    content: "";
+    display: block;
+    width: 1.1rem;
+    height: 3px;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    border-radius: 0.2rem;
+    background:#868686;
+    transition: width 0.2s ease 0s, background 0.2s ease 0s;
+}
+.active .bar2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background:#868686;
+    right: 10px;
+    height: 3px;
+    width: 1.1rem;
+    border-radius: 0.2rem;
+    transition: width 0.2s ease 0s, background 0.2s ease 0s;
+}
+.active .bar3 {
+    height: 0.3rem;
+    width: 3.4rem;
+    align-self: flex-end;
+    background: transparent;
+    transform: rotate(45deg) translate(0.1rem, 0.1rem);
+    transition: transform 0.2s ease 0s;
+    transform-origin: 100% 50%;
+}
+.active .bar3::before {
+    content: "";
+    display: block;
+    width: 0.9rem;
+    height: 3px;
+    position: absolute;
+    left: 53%;
+    top: 0px;
+    transform: translate(-0.15rem, 0%);
+    transform-origin: 0% 50%;
+    border-radius: 0.2rem;
+    background:#868686;
+    transition: width 0.2s ease 0s, background 0.2s ease 0s;
+}
+.active .bar3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #868686;
+    right: 7px;
+    height: 3px;
+    width: 3px;
+    border-radius: 0.2rem;
+    transition: width 0.2s ease 0s, background 0.2s ease 0s;
+}
+.active .bars:hover .bar1::before, .active .bars:hover .bar2::before, .active .bars:hover .bar2::after, .active .bars:hover .bar3::after {
+    width: 0.8rem;
+}
+.active .bars:hover .bar3::before {
+    width: 3px;
+    left: 50%;
+}
+.active .bars:hover .bar3::after {
+    right: 10px;
+}
