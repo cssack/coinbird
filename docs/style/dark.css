@@ -4,8 +4,10 @@ h1, h2, h3, h4, h5, h6{
 
 .bg-normal { background-color: black; }
 .text-normal { color:white; }
+.border-normal{ border-color: white!important;  }
 .bg-accent{ background-color: white; }
 .text-accent{ color: black; }
+.border-accent{ border-color: black!important; }
 
 .btn-link{
 	background-color: transparent;
@@ -16,4 +18,10 @@ h1, h2, h3, h4, h5, h6{
 	background-color: transparent;
 	color:white;
 	text-decoration: none;
+}
+
+.bar1::before, .bar1::after,
+.bar2::before, .bar2::after,
+.bar3::before, .bar3::after{
+    background: white;
 }
