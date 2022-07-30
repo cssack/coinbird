@@ -39,7 +39,9 @@ h1,h2,h3,h4,h5,h6{
 .cursor-pointer{
 	cursor: pointer;
 }
-
+.flip-horizontal{
+	transform: scaleX(-1);
+}
 
 @media (min-width: 1600px){
 	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -53,7 +55,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* scraped from https://squidgrow.wtf/ */
-
 .btn-buy-now {
     position: relative;
     display: inline-block;
