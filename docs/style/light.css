@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6{
 .bg-accent2{ background-color: #439db1; }
 .text-accent{ color: white; }
 .border-accent{ border-color: white!important; }
+.border-accent2{ border-color: #439db1; }
 
 .btn-link{
 	background-color: transparent;
