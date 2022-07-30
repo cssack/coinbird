@@ -22,3 +22,19 @@ function adaptMousePosition(evt, sender){
     document.body.classList.add("mouse-right")
   }
 }
+
+function registerMouseOverExplanations(){
+  [].forEach.call(document.querySelectorAll('[data-explanation][data-explanation-target]'), el => {
+
+    el.addEventListener('mouseenter', (e) => {
+      let target = document.querySelector(e.target.getAttribute("data-explanation-target"))
+
+      target.style.opacity = 0;
+      let explanation = e.target.getAttribute("data-explanation")
+      setTimeout(() => {
+          target.innerHTML = explanation
+          target.style.opacity = 1;
+      }, 300);
+    });
+  })
+}
