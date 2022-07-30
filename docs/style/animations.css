@@ -24,3 +24,10 @@
         opacity: 1;
     }
 }
+
+
+/* adding additional aos durations https://github.com/michalsnik/aos */
+body[data-aos-delay='4200'] [data-aos],
+[data-aos][data-aos-delay='4200'] {
+  transition-delay: 4200ms;
+}
