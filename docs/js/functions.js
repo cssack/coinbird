@@ -11,3 +11,14 @@ function toggleTheme(){
   darkStyleSheet.disabled = !darkStyleSheet.disabled;
   lightStyleSheet.disabled = !lightStyleSheet.disabled;
 }
+
+function adaptMousePosition(evt, sender){
+  if (evt.clientX < document.body.clientWidth/2){
+    document.body.classList.remove("mouse-right")
+    document.body.classList.add("mouse-left")
+  }
+  else{
+    document.body.classList.remove("mouse-left")
+    document.body.classList.add("mouse-right")
+  }
+}

@@ -1,3 +1,11 @@
+.look-at-the-mouse{
+    transition-property: transform;
+    transition-duration: 0.7s;
+    transition-delay: 0.1s;
+}
+.mouse-left .look-at-the-mouse{
+    transform: scaleX(-1);
+}
 
 #main-menu.show {
     animation: opacity 0.2s
