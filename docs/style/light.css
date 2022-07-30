@@ -6,6 +6,7 @@ h1, h2, h3, h4, h5, h6{
 .text-normal { color:black; }
 .border-normal{ border-color: black!important; }
 .bg-accent{ background-color: black; }
+.bg-accent2{ background-color: #439db1; }
 .text-accent{ color: white; }
 .border-accent{ border-color: white!important; }
 
