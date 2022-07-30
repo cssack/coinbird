@@ -26,3 +26,12 @@ h1, h2, h3, h4, h5, h6{
 .bar3::before, .bar3::after{
     background: white;
 }
+
+.btn-buy-now {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+.btn-buy-now:hover {
+	color:white
+}

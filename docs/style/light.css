@@ -30,3 +30,12 @@ h1, h2, h3, h4, h5, h6{
 .invert-on-light{
     filter: invert(100%);
 }
+
+.btn-buy-now {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+.btn-buy-now:hover {
+	color:black
+}
