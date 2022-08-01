@@ -4,6 +4,7 @@ function toggleMenu(){
     el.classList.toggle('active');
   })
   document.querySelector('#main-menu').classList.toggle('show');
+  document.querySelector('main').classList.toggle('d-none')
 }
 
 // switches between a light theme and a dark theme
