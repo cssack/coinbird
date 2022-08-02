@@ -19,6 +19,7 @@
     <link id="dark-stylesheet" rel="stylesheet" href="style/dark.css" >
     <link id="light-stylesheet" rel="stylesheet" href="style/light.css" disabled>
     <link id="alternate-font-stylesheet" rel="stylesheet" href="style/alternate-font.css" disabled>
+    <link id="nunito-font-stylesheet" rel="stylesheet" href="style/nunito-font.css" disabled>
     <link rel="stylesheet" href="style/animations.css">
 </head>
 <body class="flex-grow-1 d-flex flex-column ff-normal bg-normal text-normal" onmousemove="adaptMousePosition(event, this)">
@@ -160,12 +161,12 @@
 				</div>
 				<div class="px-3 d-none d-sm-block">
 					<div class="d-flex flex-md-row text-center text-md-start flex-column justify-content-between align-items-center">
-						<div onclick="toggleCss('#alternate-font-stylesheet')"
+						<div 
 							class="uppercase display-3 text-left fw-bold cursor-pointer" 
 							data-explanation="Yeah well who do you love when you are not around?"
 							data-explanation-target="#explanation-target">
-							We 
-							<br/>love
+							<span onclick="toggleCss('#alternate-font-stylesheet')">We</span> 
+							<br/><span onclick="toggleCss('#nunito-font-stylesheet')">love</span> 
 							<br/>coin
 							<br/>bird
 							<br/><img src="imgs/thumb-artistic-heart.png" class="d-inline-block img-fluid" style="width: 70px;" alt="">
