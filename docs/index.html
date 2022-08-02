@@ -167,18 +167,7 @@
 				</div>
 			</div>
 
-			<div class="position-absolute end-0 bottom-0 overflow-hidden" style="height: 400px; width:400px; z-index:-1">
-				<div style="transform: rotate(-45deg) translate(-50%, 120%)">
-					<div style="width: 600px;">
-						<div 
-							class="bg-accent text-center text-accent fs-3 text-nowrap" 
-							style="padding-top: 20px; padding-bottom: 20px;">
-							Best ERC-20 token ever created
-						</div>
-						<div class="text-normal text-center mt-4">all rights reserved © 2022</div>
-					</div>
-				</div>
-			</div>
+			<component id="white-stripe" />
 		</main>
 
 		
@@ -277,8 +266,25 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
 <script src="js/functions.js"></script>
+
+<script type="text/x-handlebars" id="template-white-stripe">
+	<div class="d-none d-xxl-block position-absolute end-0 bottom-0 overflow-hidden" style="height: 400px; width:400px; z-index:-1">
+		<div style="transform: rotate(-45deg) translate(-50%, 130%)">
+			<div style="width: 600px;">
+				<div 
+					class="bg-accent text-center text-accent fs-3 text-nowrap" 
+					style="padding-top: 20px; padding-bottom: 20px;">
+					Best ERC-20 token ever created
+				</div>
+				<div class="text-normal text-center mt-4">all rights reserved © 2022</div>
+			</div>
+		</div>
+	</div>
+</script>
 <script>
+	renderComponents();
 	AOS.init();
-	registerMouseOverExplanations()
+	registerMouseOverExplanations();
+
 </script>
 </html>

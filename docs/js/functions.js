@@ -7,12 +7,14 @@ function toggleMenu(){
   document.querySelector('main').classList.toggle('d-none')
 }
 
-// switches between a light theme and a dark theme
-function toggleTheme(){
-  toggleCss('#dark-stylesheet')
-  toggleCss('#light-stylesheet')
+// used to quickly add reuseable components
+function renderComponents(){
+  [].forEach.call(document.querySelectorAll("component"), el => {
+    el.innerHTML = document.querySelector("#template-" + el.id).innerHTML;
+  })
 }
 
+// switches between a light theme and a dark theme
 function toggleCss(selector){
   let stylesheet = document.querySelector(selector);
   stylesheet.disabled = !stylesheet.disabled;
