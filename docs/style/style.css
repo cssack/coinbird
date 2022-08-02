@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 /* allow sticky bottom of all absolut positioned elements */
 html{
@@ -11,8 +12,9 @@ html{
 /* remove all round corners from bootstrap. */
 * {border-radius: 0 !important;}
 
-.ff-normal { font-family: 'Kalam', cursive;}
-.ff-goose { font-family: 'Indie Flower', cursive;}
+.ff-normal { font-family: 'Nunito';}
+.ff-goose { font-family: 'Nunito';}
+.ff-kalem { font-family: 'Kalam', cursive; }
 .uppercase {text-transform: uppercase;}
 
 .fs-7{font-size: 0.8rem!important;}
