@@ -15,6 +15,10 @@ function renderComponents(){
 }
 
 // switches between a light theme and a dark theme
+function toggleColorScheme(){
+  toggleCss('#dark-stylesheet');
+  toggleCss('#light-stylesheet');
+}
 function toggleCss(selector){
   let stylesheet = document.querySelector(selector);
   stylesheet.disabled = !stylesheet.disabled;

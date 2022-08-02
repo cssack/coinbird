@@ -31,7 +31,7 @@
 		<div class="d-none d-sm-block mb-5">
 			<div class="container d-flex mt-5 " style="height: 75px;">
 				<div class="border-normal border px-2 py-1 flex-shrink-0 d-flex align-items-center" 
-					onclick="toggleCss('#dark-stylesheet');toggleCss('#light-stylesheet');" data-explanation="sure you washed your hands?" data-explanation-target="#explanation-target">
+					onclick="toggleColorScheme();" data-explanation="sure you washed your hands?" data-explanation-target="#explanation-target">
 					<img style="transform: scaleX(-1);"
 						src="imgs/thumb-gustav.png" 
 						alt="" 
@@ -73,7 +73,7 @@
 				<div class="d-sm-none">
 					<div class="position-relative" style="height: 550px;">
 						<div class="position-absolute bg-accent2 top-0 start-0 end-0" style="height: 50px; transform: rotate(-45deg) translate(-100px,-100px);" ></div>
-						<div class="position-absolute bg-accent top-0 start-0 text-accent text-center px-3 pt-1 fs-1 fw-bold" style="transform: rotate(-10deg) translate(20px,60px);" >Oh no...</div>
+						<div class="position-absolute bg-accent top-0 start-0 text-accent text-center px-3 pt-1 fs-1 fw-bold" style="transform: rotate(-10deg) translate(20px,60px);" onclick="toggleColorScheme();">Oh no...</div>
 						<div class="position-absolute fw-bold fs-3" style="top: 100px; left: 50%">
 							the coinbird made
 						</div>
