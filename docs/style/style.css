@@ -15,6 +15,10 @@ html{
 .ff-goose { font-family: 'Indie Flower', cursive;}
 .uppercase {text-transform: uppercase;}
 
+.fs-7{font-size: 0.8rem!important;}
+.fs-8{font-size: 0.75rem!important;}
+.fs-9{font-size: 0.7rem!important;}
+
 h1,h2,h3,h4,h5,h6 {
     padding-right: 0.25rem !important;
     padding-left: 0.25rem !important;
