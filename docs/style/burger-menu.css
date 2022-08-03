@@ -1,3 +1,8 @@
+.burger-menu{
+    background-color: transparent;
+    border: 0;
+}
+
 .burger-menu .glyph {
     position: relative;
     z-index: 99999;
