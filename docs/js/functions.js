@@ -19,6 +19,8 @@ async function renderComponents(){
   var components = document.querySelectorAll("component");
 
   for (let idx = 0; idx < components.length; idx++){
+    replacedAtLeastOneElement = true;
+    
     let component = components[idx];
     let insideTemplate = document.querySelector("#template-" + component.id);
     if (insideTemplate != null){
