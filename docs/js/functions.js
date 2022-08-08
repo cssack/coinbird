@@ -1,3 +1,9 @@
+async function startup(){
+  await renderComponents();
+	AOS.init();
+	registerMouseOverExplanations();
+}
+
 // opens or closes the menu
 function toggleMenu(){
   [].forEach.call(document.querySelectorAll('.burger-menu'), el => {
@@ -8,10 +14,24 @@ function toggleMenu(){
 }
 
 // used to quickly add reuseable components
-function renderComponents(){
-  [].forEach.call(document.querySelectorAll("component"), el => {
-    el.innerHTML = document.querySelector("#template-" + el.id).innerHTML;
-  })
+async function renderComponents(){
+  let replacedAtLeastOneElement = false;
+  var components = document.querySelectorAll("component");
+
+  for (let idx = 0; idx < components.length; idx++){
+    let component = components[idx];
+    let insideTemplate = document.querySelector("#template-" + component.id);
+    if (insideTemplate != null){
+      component.outerHTML = insideTemplate.innerHTML;
+      continue;
+    }
+    let response = await fetch("components/" + component.id + ".html")
+    component.outerHTML = await response.text();
+  }
+  
+  // here we ensure that nested components will be rendered as well
+  if (replacedAtLeastOneElement) 
+    renderComponents();
 }
 
 // switches between a light theme and a dark theme
