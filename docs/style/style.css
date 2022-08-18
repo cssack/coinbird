@@ -12,8 +12,8 @@ html{
 /* remove all round corners from bootstrap. */
 * {border-radius: 0 !important;}
 
-.ff-normal { font-family: 'Nunito';}
-.ff-goose { font-family: 'Nunito';}
+.ff-normal { font-family: 'Kalam';}
+.ff-goose { font-family: 'Kalam';}
 .ff-kalem { font-family: 'Kalam', cursive; }
 .uppercase {text-transform: uppercase;}
 
