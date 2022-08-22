@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro');
 @import url('https://fonts.googleapis.com/css2?family=Caveat');
@@ -16,8 +16,8 @@ html{
 
 .ff-normal { font-family: 'Source Code Pro';}
 .ff-goose { font-family: 'Caveat';}
-.ff-kalem { font-family: 'Source Code Pro'; }
-.ff-kalam { font-family: 'Kalam'; }
+.ff-kalem { font-family: 'Source Code Pro';}
+.ff-kalam { font-family: 'Kalam';}
 .uppercase {text-transform: uppercase;}
 
 .fs-7{font-size: 0.8rem!important;}
