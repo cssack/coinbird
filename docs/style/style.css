@@ -14,7 +14,7 @@ html{
 /* remove all round corners from bootstrap. */
 * {border-radius: 0 !important;}
 
-.ff-normal { font-family: 'Source Code Pro';}
+.ff-normal { font-family: 'Caveat';}
 .ff-goose { font-family: 'Caveat';}
 .ff-kalem { font-family: 'Caveat';}
 .ff-source { font-family: 'Source Code Pro';}
