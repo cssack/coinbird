@@ -6,10 +6,10 @@ h1, h2, h3, h4, h5, h6{
 .text-normal { color:black; }
 .border-normal{ border-color: black!important; }
 .bg-accent{ background-color: black; }
-.bg-accent2{ background-color: #439db1; }
+.bg-accent2{ background-color: #FFA44D; }
 .text-accent{ color: white; }
 .border-accent{ border-color: white!important; }
-.border-accent2{ border-color: #439db1; }
+.border-accent2{ border-color: #FFA44D; }
 
 .btn-link{
 	background-color: transparent;
